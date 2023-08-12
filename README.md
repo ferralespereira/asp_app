@@ -102,7 +102,7 @@ sudo systemctl enable asp_app.service
 
 ## Check the status of the service.
 ```
-systemctl status myapp.service
+systemctl status asp_app.service
 ```
 
 ##  Secure the Application
@@ -122,4 +122,10 @@ sudo ufw allow 443/tcp
 * Then check the status with the following command.
 ```
 sudo ufw status
+```
+
+# OTHERS
+* EF (Entity Framework) version
+```
+dotnet ef --version
 ```
