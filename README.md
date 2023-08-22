@@ -125,7 +125,19 @@ sudo ufw status
 ```
 
 # OTHERS
+* Version of my Framework
+```
+dotnet --version 
+``` 
 * EF (Entity Framework) version
 ```
 dotnet ef --version
+```
+* List of package do I have on my project
+```
+dotnet list package 
+``` 
+* Removing dotnet Packages 
+```
+dotnet remove package 
 ```
