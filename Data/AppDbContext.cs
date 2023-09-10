@@ -5,7 +5,7 @@ namespace asp_app.Data
 {
     public class AppDbContext : DbContext
     {
-        public DbSet<Employee> Employee { get; set; }
+        public DbSet<Employee> Employees { get; set; }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

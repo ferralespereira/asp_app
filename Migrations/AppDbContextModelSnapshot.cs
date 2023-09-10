@@ -34,7 +34,7 @@ namespace asp_app.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Employee");
+                    b.ToTable("Employees");
 
                     b.HasData(
                         new

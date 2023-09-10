@@ -10,7 +10,7 @@ using asp_app.Data;
 namespace asp_app.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230910180738_InitialCreate")]
+    [Migration("20230910181206_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -37,7 +37,7 @@ namespace asp_app.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Employee");
+                    b.ToTable("Employees");
 
                     b.HasData(
                         new
