@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace asp_app.Migrations
 {
     /// <inheritdoc />
@@ -30,6 +32,16 @@ namespace asp_app.Migrations
                     table.PrimaryKey("PK_Employee", x => x.Id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.InsertData(
+                table: "Employee",
+                columns: new[] { "Id", "Name", "Title" },
+                values: new object[,]
+                {
+                    { 1, "Juan", "Rider" },
+                    { 2, "Peter", "Teacher" },
+                    { 3, "Jhon", "Engeneer" }
+                });
         }
 
         /// <inheritdoc />

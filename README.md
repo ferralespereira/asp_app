@@ -187,6 +187,11 @@ dotnet ef migrations add InitialCreate
 ```
 dotnet ef database update
 ```
+* To Remove Migration
+```
+ef migrations remove
+```
+
 * References:
 
 `https://zetbit.tech/categories/asp-dot-net-core/41/setup-mysql-connection-dot-net-7-asp-net-core`

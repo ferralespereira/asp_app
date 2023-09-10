@@ -10,7 +10,7 @@ using asp_app.Data;
 namespace asp_app.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230823142102_InitialCreate")]
+    [Migration("20230910180738_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -38,6 +38,26 @@ namespace asp_app.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Employee");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Juan",
+                            Title = "Rider"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Peter",
+                            Title = "Teacher"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Jhon",
+                            Title = "Engeneer"
+                        });
                 });
 #pragma warning restore 612, 618
         }
