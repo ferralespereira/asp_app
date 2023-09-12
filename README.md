@@ -189,7 +189,7 @@ dotnet ef database update
 ```
 * To Remove Migration
 ```
-ef migrations remove
+dotnet ef migrations remove
 ```
 
 * References:
